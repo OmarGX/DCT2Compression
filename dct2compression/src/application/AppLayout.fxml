@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="AnchorPane" prefHeight="850.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ApplicationController">
+   <children>
+      <ButtonBar layoutX="14.0" layoutY="14.0" prefHeight="40.0" prefWidth="310.0">
+        <buttons>
+            <Button fx:id="UploadButton" mnemonicParsing="false" onAction="#UploadImg" prefHeight="25.0" prefWidth="125.0" text="Carica Immagine" />
+          <Button fx:id="TransformButton" mnemonicParsing="false" onAction="#ComputeDCT2" prefHeight="25.0" prefWidth="155.0" text="Esegui Trasformazione" />
+        </buttons>
+      </ButtonBar>
+      <Separator layoutX="334.0" layoutY="-66.0" orientation="VERTICAL" prefHeight="200.0" />
+      <ImageView fx:id="ImgView1" fitHeight="481.0" fitWidth="531.0" layoutX="56.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ImgView2" fitHeight="481.0" fitWidth="531.0" layoutX="619.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="Ffield" layoutX="169.0" layoutY="68.0" promptText="Inserisci Intero F" />
+      <TextField fx:id="Dfield" layoutX="169.0" layoutY="109.0" promptText="Inserisci Intervallo d" />
+   </children>
+</AnchorPane>
